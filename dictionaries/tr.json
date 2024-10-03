@@ -1,0 +1,67 @@
+{
+    "Navbar": {
+        "home": "Ana Sayfa",
+        "about": "Hakkımızda",
+        "vehicleModels": "Araç Modelleri",
+        "testimonials": "Müşteri Yorumları",
+        "ourTeam": "Ekibimiz",
+        "contact": "İletişim",
+        "languageSwitch": "Dil"
+    },
+    "Footer": {
+        "companyName": "Lüks Araç Kiralama",
+        "companyDescription": "Premium kiralama hizmetlerimizle otomotiv lüksünün en iyisini deneyimleyin.",
+        "quickLinks": "Hızlı Bağlantılar",
+        "contact": "Bize Ulaşın",
+        "address": "Lüks Sokak No: 123, Prestij Şehri, 34000",
+        "phone": "+90 (555) 123 45 67",
+        "email": "info@luksarackiralama.com",
+        "allRightsReserved": "Tüm hakları saklıdır."
+    },
+    "HomePage": {
+        "bannerTitle": "Lüks Araç Kiralama",
+        "bannerSubtitle": "Hayalinizdeki sürüşü deneyimleyin",
+        "exploreButton": "Filomuzu Keşfedin",
+        "showcaseTitle": "Öne Çıkan Araçlarımız",
+        "perDay": "günlük",
+        "learnMore": "Detaylar",
+        "book": "Hemen Kirala"
+    },
+    "About": {
+        "title": "Hakkımızda",
+        "content": "En iyi sürüş deneyimini sunmaya adanmış premium bir araç kiralama hizmetiyiz."
+    },
+    "VehicleModels": {
+        "title": "Araç Modellerimiz",
+        "subtitle": "Geniş lüks araç yelpazemizden seçiminizi yapın"
+    },
+    "Testimonials": {
+        "title": "Müşterilerimiz Ne Diyor",
+        "subtitle": "Memnun müşterilerimizin deneyimlerini okuyun"
+    },
+    "OurTeam": {
+        "title": "Ekibimizle Tanışın",
+        "subtitle": "Olağanüstü hizmetimizin arkasındaki profesyoneller"
+    },
+    "Contact": {
+        "title": "Bize Ulaşın",
+        "subtitle": "Sorularınız veya rezervasyonlarınız için iletişime geçin",
+        "nameLabel": "Adınız",
+        "emailLabel": "E-posta Adresiniz",
+        "messageLabel": "Mesajınız",
+        "sendButton": "Mesaj Gönder"
+    },
+    "Common": {
+        "loading": "Yükleniyor...",
+        "error": "Bir hata oluştu. Lütfen tekrar deneyin.",
+        "success": "Başarılı!",
+        "currency": "₺"
+    },
+    "Banner": {
+        "title": "Araç kiralama ile",
+        "subtitle": "büyük tasarruf",
+        "description": "Hayalinizdeki arabayı kiralayın. Rakipsiz fiyatlar, sınırsız kilometre, esnek teslim alma seçenekleri ve çok daha fazlası.",
+        "bookRide": "Rezervasyon Yap",
+        "learnMore": "Daha Fazla Bilgi"
+    }
+}

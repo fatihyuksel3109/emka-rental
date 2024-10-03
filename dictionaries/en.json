@@ -1,0 +1,67 @@
+{
+    "Navbar": {
+        "home": "Home",
+        "about": "About",
+        "vehicleModels": "Vehicle Models",
+        "testimonials": "Testimonials",
+        "ourTeam": "Our Team",
+        "contact": "Contact",
+        "languageSwitch": "Language"
+    },
+    "Footer": {
+        "companyName": "Luxury Car Rentals",
+        "companyDescription": "Experience the finest in automotive luxury with our premium rental services.",
+        "quickLinks": "Quick Links",
+        "contact": "Contact Us",
+        "address": "123 Luxury Lane, Prestige City, 90210",
+        "phone": "+1 (555) 123-4567",
+        "email": "info@luxurycarrentals.com",
+        "allRightsReserved": "All rights reserved."
+    },
+    "HomePage": {
+        "bannerTitle": "Luxury Car Rentals",
+        "bannerSubtitle": "Experience the drive of your dreams",
+        "exploreButton": "Explore Our Fleet",
+        "showcaseTitle": "Our Featured Vehicles",
+        "perDay": "per day",
+        "learnMore": "Learn More",
+        "book": "Book Now"
+    },
+    "About": {
+        "title": "About Us",
+        "content": "We are a premium car rental service dedicated to providing you with the best driving experience."
+    },
+    "VehicleModels": {
+        "title": "Our Vehicle Models",
+        "subtitle": "Choose from our wide range of luxury vehicles"
+    },
+    "Testimonials": {
+        "title": "What Our Customers Say",
+        "subtitle": "Read about experiences from our satisfied clients"
+    },
+    "OurTeam": {
+        "title": "Meet Our Team",
+        "subtitle": "The professionals behind our exceptional service"
+    },
+    "Contact": {
+        "title": "Contact Us",
+        "subtitle": "Get in touch for inquiries or bookings",
+        "nameLabel": "Your Name",
+        "emailLabel": "Your Email",
+        "messageLabel": "Your Message",
+        "sendButton": "Send Message"
+    },
+    "Common": {
+        "loading": "Loading...",
+        "error": "An error occurred. Please try again.",
+        "success": "Success!",
+        "currency": "$"
+    },
+    "Banner": {
+        "title": "Save big with our",
+        "subtitle": "car rental",
+        "description": "Rent the car of your dreams. Unbeatable prices, unlimited miles, flexible pick-up options and much more.",
+        "bookRide": "Book Ride",
+        "learnMore": "Learn More"
+    }
+}
