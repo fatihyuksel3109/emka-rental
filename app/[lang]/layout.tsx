@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description: "Luxury car rentals at your fingertips",
 };
 
-export default async function RootLayout({
+export default async function LangLayout({
   children,
   params: { lang },
 }: {
@@ -22,12 +22,10 @@ export default async function RootLayout({
   const dict = await getDictionary(lang);
 
   return (
-    <html lang={lang}>
-      <body className={inter.className}>
-        <Navbar dict={dict} lang={lang} />
-        <main>{children}</main>
-        <Footer dict={dict} lang={lang} />
-      </body>
-    </html>
+    <>
+      <Navbar dict={dict} lang={lang} />
+      <main>{children}</main>
+      <Footer dict={dict} lang={lang} />
+    </>
   );
 }

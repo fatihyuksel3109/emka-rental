@@ -63,5 +63,15 @@
         "description": "Hayalinizdeki arabayı kiralayın. Rakipsiz fiyatlar, sınırsız kilometre, esnek teslim alma seçenekleri ve çok daha fazlası.",
         "bookRide": "Rezervasyon Yap",
         "learnMore": "Daha Fazla Bilgi"
+    },
+    "CarDetail": {
+        "brand": "Marka",
+        "model": "Model",
+        "year": "Yıl",
+        "transmission": "Vites",
+        "seats": "Koltuk",
+        "fuelType": "Yakıt Tipi",
+        "price": "Fiyat",
+        "features": "Özellikler"
     }
 }

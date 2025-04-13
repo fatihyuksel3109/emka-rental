@@ -63,5 +63,15 @@
         "description": "Rent the car of your dreams. Unbeatable prices, unlimited miles, flexible pick-up options and much more.",
         "bookRide": "Book Ride",
         "learnMore": "Learn More"
+    },
+    "CarDetail": {
+        "brand": "Brand",
+        "model": "Model",
+        "year": "Year",
+        "transmission": "Transmission",
+        "seats": "Seats",
+        "fuelType": "Fuel Type",
+        "price": "Price",
+        "features": "Features"
     }
 }

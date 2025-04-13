@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-
+import { AntdRegistry } from "@ant-design/nextjs-registry";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -11,14 +11,19 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-  params: { lang },
+  params,
 }: {
   children: React.ReactNode;
-  params: { lang: string };
+  params?: { lang?: string };
 }) {
+  // Default to 'en' if no language is specified
+  const lang = params?.lang || "en";
+
   return (
     <html lang={lang}>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <AntdRegistry>{children}</AntdRegistry>
+      </body>
     </html>
   );
 }
