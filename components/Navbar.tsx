@@ -49,9 +49,9 @@ const Navbar: React.FC<NavbarProps> = ({ dict, lang }) => {
   const navItems = [
     "home",
     "about",
-    "vehicleModels",
-    "testimonials",
-    "ourTeam",
+    // "vehicleModels",
+    // "testimonials",
+    // "ourTeam",
     "contact",
   ];
 
@@ -82,9 +82,9 @@ const Navbar: React.FC<NavbarProps> = ({ dict, lang }) => {
       <div className="container mx-auto flex justify-between items-center">
         <Link
           href={`/${lang}`}
-          className="text-2xl font-bold text-yellow-400 hover:text-yellow-300 transition-colors"
+          className="text-2xl font-bold bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 text-transparent bg-clip-text hover:from-yellow-500 hover:via-yellow-600 hover:to-yellow-700 transition-all"
         >
-          CarRental
+          EMKA AUTOMOTIVE
         </Link>
 
         {/* Desktop Menu */}

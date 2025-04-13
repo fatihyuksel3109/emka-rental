@@ -9,20 +9,28 @@ import {
 } from "@/components/ui/card";
 import { LucideWheat } from "lucide-react";
 import Banner from "./Banner";
+import Image from "next/image";
+import EgeaTriple from "@/public/images/egea-triple.jpeg";
+import I20TripleAutomatic from "@/public/images/i20-triple-automatic.jpeg";
 
 const HomePage = ({ dict }: { dict: any }) => {
   const cars = [
     {
       id: 1,
-      name: "Luxury Sedan",
-      image: "/api/placeholder/400/300",
+      name: "Fiat Egea - Manual",
+      image: EgeaTriple,
       price: "100",
     },
-    { id: 2, name: "SUV", image: "/api/placeholder/400/300", price: "120" },
+    {
+      id: 2,
+      name: "Hyundai I20 - Automatic",
+      image: I20TripleAutomatic,
+      price: "120",
+    },
     {
       id: 3,
-      name: "Sports Car",
-      image: "/api/placeholder/400/300",
+      name: "Hyundai I20 - Automatic",
+      image: I20TripleAutomatic,
       price: "150",
     },
   ];
@@ -31,15 +39,6 @@ const HomePage = ({ dict }: { dict: any }) => {
     <div className="bg-white">
       {/* Banner Section */}
       <section className="bg-red-600 text-white py-20">
-        {/* <div className="container mx-auto text-center">
-          <h1 className="text-4xl font-bold mb-4">
-            {dict.HomePage.bannerTitle}
-          </h1>
-          <p className="text-xl mb-8">{dict.HomePage.bannerSubtitle}</p>
-          <Button className="bg-gold text-black hover:bg-gold-600">
-            {dict.HomePage.exploreButton}
-          </Button>
-        </div> */}
         <Banner dict={dict} />
       </section>
 
@@ -56,10 +55,13 @@ const HomePage = ({ dict }: { dict: any }) => {
                   <CardTitle>{car.name}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <img
+                  <Image
                     src={car.image}
                     alt={car.name}
-                    className="w-full h-48 object-cover mb-4"
+                    className="w-full h-56 object-contain mb-4 hover:scale-105 transition-transform duration-300"
+                    width={800}
+                    height={450}
+                    priority
                   />
                   <p className="text-xl font-bold">
                     ${car.price} / {dict.HomePage.perDay}

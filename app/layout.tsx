@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Car Rental App",
+  title: "EMKA AUTOMOTIVE",
   description: "Luxury car rentals at your fingertips",
 };
 

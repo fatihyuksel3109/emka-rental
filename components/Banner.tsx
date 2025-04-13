@@ -21,7 +21,7 @@ const Banner: React.FC<BannerProps> = ({ dict }) => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div>
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-red-500">
               {dict.Banner.title}{" "}
               <span className="text-red-500">{dict.Banner.subtitle}</span>
             </h2>
