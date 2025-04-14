@@ -12,7 +12,12 @@ const CarSchema = new mongoose.Schema({
   transmission: { type: String, required: true },
   features: { type: [String], default: [] },
   available: { type: Boolean, default: true },
-  imageUrl: { type: String, default: "" },
+  imageUrl: { type: String, required: true },
+  category: {
+    type: String,
+    enum: ["economic", "mid", "high", "luxury", "minibus", "suv"],
+    required: [true, "Category is required"],
+  },
 });
 
 export default mongoose.models.Car || mongoose.model("Car", CarSchema);

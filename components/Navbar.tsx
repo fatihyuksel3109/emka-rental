@@ -16,6 +16,7 @@ interface NavbarProps {
       ourTeam: string;
       contact: string;
       languageSwitch: string;
+      AdminLogin: string;
     };
   };
   lang: string;

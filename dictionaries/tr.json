@@ -53,11 +53,12 @@
     "brand": "Marka",
     "model": "Model",
     "year": "Yıl",
-    "transmission": "Vites",
-    "seats": "Koltuk",
+    "transmission": "Şanzıman",
+    "seats": "Koltuk Sayısı",
     "fuelType": "Yakıt Tipi",
     "price": "Fiyat",
-    "features": "Özellikler"
+    "features": "Özellikler",
+    "noFeatures": "Özellik listelenmedi"
   },
   "AdminLogin": {
     "title": "Yönetici Girişi",
@@ -72,7 +73,17 @@
     "learnMore": "Daha Fazla Bilgi",
     "book": "Şimdi Rezerve Et",
     "fetchCarsError": "Arabalar yüklenemedi",
-    "noCars": "Hiç araba yok"
+    "noCars": "Hiç araba yok",
+    "category": "Kategori",
+    "categories": {
+      "all": "Hepsi",
+      "economic": "Ekonomik",
+      "mid": "Orta",
+      "high": "Üst",
+      "luxury": "Lüks",
+      "minibus": "Minibüs",
+      "suv": "Suv"
+    }
   },
   "AdminDashboard": {
     "title": "Yönetici Paneli",
@@ -111,7 +122,17 @@
     "updateAvailabilitySuccess": "Araba kullanılabilirliği güncellendi",
     "updateAvailabilityError": "Kullanılabilirlik güncellenemedi",
     "fetchCarsError": "Arabalar yüklenemedi",
-    "noCars": "Hiç araba yok"
+    "noCars": "Hiç araba yok",
+    "category": "Kategori",
+    "selectCategoryPlaceholder": "Bir kategori seçin",
+    "categories": {
+      "economic": "Ekonomik",
+      "mid": "Orta",
+      "high": "Üst",
+      "luxury": "Lüks",
+      "minibus": "Minibüs",
+      "suv": "Suv"
+    }
   },
   "Common": {
     "error": "Hata",

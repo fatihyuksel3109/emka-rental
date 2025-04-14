@@ -42,6 +42,7 @@ const Banner: React.FC<BannerProps> = ({ dict }) => {
             <Image
               src={heroBigCar}
               alt="hero"
+              priority
               width={800}
               height={450}
               className="absolute right-0 hidden lg:inline-block"

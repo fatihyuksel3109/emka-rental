@@ -12,11 +12,10 @@ import { Switch } from "@/components/ui/switch";
 import { toast } from "@/components/ui/use-toast";
 import Image from "next/image";
 
-// Predefined images in public/images/
 const predefinedImages = [
   { value: "/images/egea-triple.jpeg", label: "Egea" },
   { value: "/images/i20-triple-automatic.jpeg", label: "i20" },
-  { value: "/images/clio-triple.jpeg", label: "Clio" }, // Fixed duplicate
+  { value: "/images/clio-triple.jpeg", label: "Clio" },
 ];
 
 interface Car {
@@ -33,6 +32,7 @@ interface Car {
   features: string[];
   available: boolean;
   imageUrl: string;
+  category: string;
 }
 
 export default function AdminDashboard({
@@ -103,6 +103,7 @@ export default function AdminDashboard({
       features: [],
       available: true,
       imageUrl: "",
+      category: "economic", // Ensure default
     });
     setFeaturesInput("");
     setUseCustomImage(false);
@@ -110,7 +111,10 @@ export default function AdminDashboard({
   };
 
   const openEditForm = (car: Car) => {
-    setFormCar(car);
+    setFormCar({
+      ...car,
+      category: car.category || "economic", // Fallback for existing cars
+    });
     setFeaturesInput(car.features.join(", "));
     setUseCustomImage(!predefinedImages.some((img) => img.value === car.imageUrl));
     setIsEditing(true);
@@ -136,6 +140,7 @@ export default function AdminDashboard({
         body: JSON.stringify({
           ...formCar,
           features: featuresInput.split(",").map((f: string) => f.trim()).filter(Boolean),
+          category: formCar.category || "economic", // Ensure category is sent
         }),
       });
       if (response.ok) {
@@ -148,14 +153,15 @@ export default function AdminDashboard({
         closeForm();
         fetchCars();
       } else {
-        throw new Error(isEditing ? "Failed to update car" : "Failed to add car");
+        const errorData = await response.json();
+        throw new Error(errorData.error || (isEditing ? "Failed to update car" : "Failed to add car"));
       }
-    } catch (error) {
+    } catch (error: any) {
       toast({
         title: dict?.Common?.error || "Error",
-        description: isEditing
+        description: error.message || (isEditing
           ? dict?.AdminDashboard?.updateCarError || "Failed to update car"
-          : dict?.AdminDashboard?.addCarError || "Failed to add car",
+          : dict?.AdminDashboard?.addCarError || "Failed to add car"),
         variant: "destructive",
       });
     }
@@ -209,6 +215,15 @@ export default function AdminDashboard({
     }
   };
 
+  const categories = [
+    { value: "economic", label: dict?.AdminDashboard?.categories?.economic || "Economic" },
+    { value: "mid", label: dict?.AdminDashboard?.categories?.mid || "Mid" },
+    { value: "high", label: dict?.AdminDashboard?.categories?.high || "High" },
+    { value: "luxury", label: dict?.AdminDashboard?.categories?.luxury || "Luxury" },
+    { value: "minibus", label: dict?.AdminDashboard?.categories?.minibus || "Minibus" },
+    { value: "suv", label: dict?.AdminDashboard?.categories?.suv || "SUV" },
+  ];
+
   if (status === "loading" || !dict) {
     return <div>{dict?.Common?.loading || "Loading..."}</div>;
   }
@@ -245,6 +260,8 @@ export default function AdminDashboard({
                             src={car.imageUrl}
                             alt={car.name}
                             fill
+                            sizes="(max-width: 768px) 100vw,(max-width: 1200px) 50vw,33vw"
+                            priority
                             style={{ objectFit: "cover" }}
                             onError={() => console.error(`Failed to load image: ${car.imageUrl}`)}
                           />
@@ -253,6 +270,9 @@ export default function AdminDashboard({
                       <p>
                         {dict.AdminDashboard?.price || "Price"}: {dict.Common?.currency || "$"}
                         {car.price}
+                      </p>
+                      <p className="text-sm capitalize">
+                        {dict.AdminDashboard?.category || "Category"}: {dict.AdminDashboard?.categories?.[car.category] || car.category || "Not set"}
                       </p>
                       <div className="flex items-center space-x-2 mb-2">
                         <Label>{dict.AdminDashboard?.available || "Available"}</Label>
@@ -377,6 +397,25 @@ export default function AdminDashboard({
                       required
                     />
                   </div>
+                  <div>
+                    <Label htmlFor="category">{dict.AdminDashboard?.category || "Category"}</Label>
+                    <select
+                      id="category"
+                      value={formCar.category}
+                      onChange={(e) => setFormCar({ ...formCar, category: e.target.value })}
+                      className="w-full p-2 border rounded"
+                      required
+                    >
+                      <option value="" disabled>
+                        {dict.AdminDashboard?.selectCategoryPlaceholder || "Select a category"}
+                      </option>
+                      {categories.map((cat) => (
+                        <option key={cat.value} value={cat.value}>
+                          {cat.label}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
                   <div className="md:col-span-2">
                     <Label htmlFor="features">{dict.AdminDashboard?.features || "Features"}</Label>
                     <Input
@@ -402,6 +441,7 @@ export default function AdminDashboard({
                           value={formCar.imageUrl}
                           onChange={(e) => setFormCar({ ...formCar, imageUrl: e.target.value })}
                           placeholder="https://example.com/car.jpg"
+                          required
                         />
                       </div>
                     ) : (
@@ -412,6 +452,7 @@ export default function AdminDashboard({
                           value={formCar.imageUrl}
                           onChange={(e) => setFormCar({ ...formCar, imageUrl: e.target.value })}
                           className="w-full p-2 border rounded"
+                          required
                         >
                           <option value="" disabled>
                             {dict.AdminDashboard?.selectImagePlaceholder || "Choose an image"}
