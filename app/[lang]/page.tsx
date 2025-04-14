@@ -2,6 +2,7 @@
 
 import { getDictionary } from "@/lib/dictionary";
 import HomePage from "@/components/HomePage";
+import Spinner from "@/components/Spinner";
 import { useState, useEffect } from "react";
 
 export default function Page({ params }: { params: { lang: string } }) {
@@ -20,7 +21,7 @@ export default function Page({ params }: { params: { lang: string } }) {
   }, [params.lang]);
 
   if (!dict) {
-    return <div>Loading...</div>;
+    return <Spinner />;
   }
 
   return <HomePage dict={dict} />;

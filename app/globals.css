@@ -76,3 +76,24 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .animate-car-move {
+    animation: carMove 2s infinite linear;
+  }
+
+  .animate-road-dash {
+    animation: roadDash 1s infinite linear;
+  }
+
+  @keyframes carMove {
+    0% { transform: translateX(-50%); }
+    50% { transform: translateX(100%); }
+    100% { transform: translateX(-50%); }
+  }
+
+  @keyframes roadDash {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+}
