@@ -1,77 +1,115 @@
 {
-    "Navbar": {
-        "home": "Home",
-        "about": "About",
-        "vehicleModels": "Vehicle Models",
-        "testimonials": "Testimonials",
-        "ourTeam": "Our Team",
-        "contact": "Contact",
-        "languageSwitch": "Language"
-    },
-    "Footer": {
-        "companyName": "Luxury Car Rentals",
-        "companyDescription": "Experience the finest in automotive luxury with our premium rental services.",
-        "quickLinks": "Quick Links",
-        "contact": "Contact Us",
-        "address": "123 Luxury Lane, Prestige City, 90210",
-        "phone": "+1 (555) 123-4567",
-        "email": "info@luxurycarrentals.com",
-        "allRightsReserved": "All rights reserved."
-    },
-    "HomePage": {
-        "bannerTitle": "Luxury Car Rentals",
-        "bannerSubtitle": "Experience the drive of your dreams",
-        "exploreButton": "Explore Our Fleet",
-        "showcaseTitle": "Our Featured Vehicles",
-        "perDay": "per day",
-        "learnMore": "Learn More",
-        "book": "Book Now"
-    },
-    "About": {
-        "title": "About Us",
-        "content": "We are a premium car rental service dedicated to providing you with the best driving experience."
-    },
-    "VehicleModels": {
-        "title": "Our Vehicle Models",
-        "subtitle": "Choose from our wide range of luxury vehicles"
-    },
-    "Testimonials": {
-        "title": "What Our Customers Say",
-        "subtitle": "Read about experiences from our satisfied clients"
-    },
-    "OurTeam": {
-        "title": "Meet Our Team",
-        "subtitle": "The professionals behind our exceptional service"
-    },
-    "Contact": {
-        "title": "Contact Us",
-        "subtitle": "Get in touch for inquiries or bookings",
-        "nameLabel": "Your Name",
-        "emailLabel": "Your Email",
-        "messageLabel": "Your Message",
-        "sendButton": "Send Message"
-    },
-    "Common": {
-        "loading": "Loading...",
-        "error": "An error occurred. Please try again.",
-        "success": "Success!",
-        "currency": "$"
-    },
-    "Banner": {
-        "title": "Save big with our",
-        "subtitle": "car rental",
-        "description": "Rent the car of your dreams. Unbeatable prices, unlimited miles, flexible pick-up options and much more.",
-        "bookRide": "Book Ride",
-        "learnMore": "Learn More"
-    },
-    "CarDetail": {
-        "brand": "Brand",
-        "model": "Model",
-        "year": "Year",
-        "transmission": "Transmission",
-        "seats": "Seats",
-        "fuelType": "Fuel Type",
-        "price": "Price",
-        "features": "Features"
-    }
+  "Navbar": {
+  "home": "Home",
+  "about": "About",
+  "vehicleModels": "Vehicle Models",
+  "testimonials": "Testimonials",
+  "ourTeam": "Our Team",
+  "contact": "Contact",
+  "languageSwitch": "Language"
+  },
+  "Footer": {
+  "companyName": "Luxury Car Rentals",
+  "companyDescription": "Experience the finest in automotive luxury with our premium rental services.",
+  "quickLinks": "Quick Links",
+  "contact": "Contact Us",
+  "address": "123 Luxury Lane, Prestige City, 90210",
+  "phone": "+1 (555) 123-4567",
+  "email": "info@luxurycarrentals.com",
+  "allRightsReserved": "All rights reserved."
+  },
+  "About": {
+  "title": "About Us",
+  "content": "We are a premium car rental service dedicated to providing you with the best driving experience."
+  },
+  "VehicleModels": {
+  "title": "Our Vehicle Models",
+  "subtitle": "Choose from our wide range of luxury vehicles"
+  },
+  "Testimonials": {
+  "title": "What Our Customers Say",
+  "subtitle": "Read about experiences from our satisfied clients"
+  },
+  "OurTeam": {
+  "title": "Meet Our Team",
+  "subtitle": "The professionals behind our exceptional service"
+  },
+  "Contact": {
+  "title": "Contact Us",
+  "subtitle": "Get in touch for inquiries or bookings",
+  "nameLabel": "Your Name",
+  "emailLabel": "Your Email",
+  "messageLabel": "Your Message",
+  "sendButton": "Send Message"
+  },
+  "Banner": {
+  "title": "Save big with our",
+  "subtitle": "car rental",
+  "description": "Rent the car of your dreams. Unbeatable prices, unlimited miles, flexible pick-up options and much more.",
+  "bookRide": "Book Ride",
+  "learnMore": "Learn More"
+  },
+  "CarDetail": {
+  "brand": "Brand",
+  "model": "Model",
+  "year": "Year",
+  "transmission": "Transmission",
+  "seats": "Seats",
+  "fuelType": "Fuel Type",
+  "price": "Price",
+  "features": "Features"
+  },
+  "HomePage": {
+  "showcaseTitle": "Our Luxury Cars",
+  "perDay": "per day",
+  "learnMore": "Learn More",
+  "book": "Book Now",
+  "fetchCarsError": "Unable to load cars",
+  "noCars": "No cars available"
+  },
+  "AdminDashboard": {
+    "title": "Admin Dashboard",
+    "carList": "Car List",
+    "addCar": "Add New Car",
+    "addCarButton": "Add New Car",
+    "editCar": "Edit Car",
+    "editButton": "Edit",
+    "updateButton": "Update Car",
+    "cancelButton": "Cancel",
+    "deleteButton": "Delete",
+    "logoutButton": "Logout",
+    "name": "Name",
+    "brand": "Brand",
+    "model": "Model",
+    "year": "Year",
+    "price": "Price",
+    "shiftType": "Shift Type",
+    "seats": "Seats",
+    "fuelType": "Fuel Type",
+    "transmission": "Transmission",
+    "features": "Features",
+    "featuresPlaceholder": "Enter features separated by commas",
+    "available": "Available",
+    "useCustomImage": "Use Custom Image URL",
+    "imageUrl": "Image URL",
+    "selectImage": "Select Image",
+    "selectImagePlaceholder": "Choose an image",
+    "addButton": "Add Car",
+    "addCarSuccess": "Car added successfully",
+    "addCarError": "Failed to add car",
+    "updateCarSuccess": "Car updated successfully",
+    "updateCarError": "Failed to update car",
+    "deleteCarSuccess": "Car deleted successfully",
+    "deleteCarError": "Failed to delete car",
+    "updateAvailabilitySuccess": "Car availability updated",
+    "updateAvailabilityError": "Failed to update availability",
+    "fetchCarsError": "Failed to fetch cars",
+    "noCars": "No cars available"
+  },
+  "Common": {
+    "error": "Error",
+    "success": "Success",
+    "loading": "Loading...",
+    "currency": "$"
+  }
 }

@@ -1,77 +1,122 @@
 {
-    "Navbar": {
-        "home": "Ana Sayfa",
-        "about": "Hakkımızda",
-        "vehicleModels": "Araç Modelleri",
-        "testimonials": "Müşteri Yorumları",
-        "ourTeam": "Ekibimiz",
-        "contact": "İletişim",
-        "languageSwitch": "Dil"
-    },
-    "Footer": {
-        "companyName": "Lüks Araç Kiralama",
-        "companyDescription": "Premium kiralama hizmetlerimizle otomotiv lüksünün en iyisini deneyimleyin.",
-        "quickLinks": "Hızlı Bağlantılar",
-        "contact": "Bize Ulaşın",
-        "address": "Lüks Sokak No: 123, Prestij Şehri, 34000",
-        "phone": "+90 (555) 123 45 67",
-        "email": "info@luksarackiralama.com",
-        "allRightsReserved": "Tüm hakları saklıdır."
-    },
-    "HomePage": {
-        "bannerTitle": "Lüks Araç Kiralama",
-        "bannerSubtitle": "Hayalinizdeki sürüşü deneyimleyin",
-        "exploreButton": "Filomuzu Keşfedin",
-        "showcaseTitle": "Öne Çıkan Araçlarımız",
-        "perDay": "günlük",
-        "learnMore": "Detaylar",
-        "book": "Hemen Kirala"
-    },
-    "About": {
-        "title": "Hakkımızda",
-        "content": "En iyi sürüş deneyimini sunmaya adanmış premium bir araç kiralama hizmetiyiz."
-    },
-    "VehicleModels": {
-        "title": "Araç Modellerimiz",
-        "subtitle": "Geniş lüks araç yelpazemizden seçiminizi yapın"
-    },
-    "Testimonials": {
-        "title": "Müşterilerimiz Ne Diyor",
-        "subtitle": "Memnun müşterilerimizin deneyimlerini okuyun"
-    },
-    "OurTeam": {
-        "title": "Ekibimizle Tanışın",
-        "subtitle": "Olağanüstü hizmetimizin arkasındaki profesyoneller"
-    },
-    "Contact": {
-        "title": "Bize Ulaşın",
-        "subtitle": "Sorularınız veya rezervasyonlarınız için iletişime geçin",
-        "nameLabel": "Adınız",
-        "emailLabel": "E-posta Adresiniz",
-        "messageLabel": "Mesajınız",
-        "sendButton": "Mesaj Gönder"
-    },
-    "Common": {
-        "loading": "Yükleniyor...",
-        "error": "Bir hata oluştu. Lütfen tekrar deneyin.",
-        "success": "Başarılı!",
-        "currency": "₺"
-    },
-    "Banner": {
-        "title": "Araç kiralama ile",
-        "subtitle": "büyük tasarruf",
-        "description": "Hayalinizdeki arabayı kiralayın. Rakipsiz fiyatlar, sınırsız kilometre, esnek teslim alma seçenekleri ve çok daha fazlası.",
-        "bookRide": "Rezervasyon Yap",
-        "learnMore": "Daha Fazla Bilgi"
-    },
-    "CarDetail": {
-        "brand": "Marka",
-        "model": "Model",
-        "year": "Yıl",
-        "transmission": "Vites",
-        "seats": "Koltuk",
-        "fuelType": "Yakıt Tipi",
-        "price": "Fiyat",
-        "features": "Özellikler"
-    }
-}
+  "Navbar": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "vehicleModels": "Araç Modelleri",
+    "testimonials": "Müşteri Yorumları",
+    "ourTeam": "Ekibimiz",
+    "contact": "İletişim",
+    "languageSwitch": "Dil"
+  },
+  "Footer": {
+    "companyName": "Lüks Araç Kiralama",
+    "companyDescription": "Premium kiralama hizmetlerimizle otomotiv lüksünün en iyisini deneyimleyin.",
+    "quickLinks": "Hızlı Bağlantılar",
+    "contact": "Bize Ulaşın",
+    "address": "Lüks Sokak No: 123, Prestij Şehri, 34000",
+    "phone": "+90 (555) 123 45 67",
+    "email": "info@luksarackiralama.com",
+    "allRightsReserved": "Tüm hakları saklıdır."
+  },
+  "About": {
+    "title": "Hakkımızda",
+    "content": "En iyi sürüş deneyimini sunmaya adanmış premium bir araç kiralama hizmetiyiz."
+  },
+  "VehicleModels": {
+    "title": "Araç Modellerimiz",
+    "subtitle": "Geniş lüks araç yelpazemizden seçiminizi yapın"
+  },
+  "Testimonials": {
+    "title": "Müşterilerimiz Ne Diyor",
+    "subtitle": "Memnun müşterilerimizin deneyimlerini okuyun"
+  },
+  "OurTeam": {
+    "title": "Ekibimizle Tanışın",
+    "subtitle": "Olağanüstü hizmetimizin arkasındaki profesyoneller"
+  },
+  "Contact": {
+    "title": "Bize Ulaşın",
+    "subtitle": "Sorularınız veya rezervasyonlarınız için iletişime geçin",
+    "nameLabel": "Adınız",
+    "emailLabel": "E-posta Adresiniz",
+    "messageLabel": "Mesajınız",
+    "sendButton": "Mesaj Gönder"
+  },
+  "Banner": {
+    "title": "Araç kiralama ile",
+    "subtitle": "büyük tasarruf",
+    "description": "Hayalinizdeki arabayı kiralayın. Rakipsiz fiyatlar, sınırsız kilometre, esnek teslim alma seçenekleri ve çok daha fazlası.",
+    "bookRide": "Rezervasyon Yap",
+    "learnMore": "Daha Fazla Bilgi"
+  },
+  "CarDetail": {
+    "brand": "Marka",
+    "model": "Model",
+    "year": "Yıl",
+    "transmission": "Vites",
+    "seats": "Koltuk",
+    "fuelType": "Yakıt Tipi",
+    "price": "Fiyat",
+    "features": "Özellikler"
+  },
+  "AdminLogin": {
+    "title": "Yönetici Girişi",
+    "email": "E-posta",
+    "password": "Şifre",
+    "signInButton": "Giriş Yap",
+    "invalidCredentials": "Geçersiz e-posta veya şifre"
+  },
+  "HomePage": {
+    "showcaseTitle": "Lüks Arabalarımız",
+    "perDay": "günlük",
+    "learnMore": "Daha Fazla Bilgi",
+    "book": "Şimdi Rezerve Et",
+    "fetchCarsError": "Arabalar yüklenemedi",
+    "noCars": "Hiç araba yok"
+  },
+  "AdminDashboard": {
+    "title": "Yönetici Paneli",
+    "carList": "Araba Listesi",
+    "addCar": "Yeni Araba Ekle",
+    "addCarButton": "Yeni Araba Ekle",
+    "editCar": "Araba Düzenle",
+    "editButton": "Düzenle",
+    "updateButton": "Araba Güncelle",
+    "cancelButton": "İptal",
+    "deleteButton": "Sil",
+    "logoutButton": "Çıkış Yap",
+    "name": "İsim",
+    "brand": "Marka",
+    "model": "Model",
+    "year": "Yıl",
+    "price": "Fiyat",
+    "shiftType": "Vites Tipi",
+    "seats": "Koltuk Sayısı",
+    "fuelType": "Yakıt Tipi",
+    "transmission": "Şanzıman",
+    "features": "Özellikler",
+    "featuresPlaceholder": "Özellikleri virgülle ayırarak girin",
+    "available": "Mevcut",
+    "useCustomImage": "Özel Resim URL Kullan",
+    "imageUrl": "Resim URL",
+    "selectImage": "Resim Seç",
+    "selectImagePlaceholder": "Bir resim seçin",
+    "addButton": "Araba Ekle",
+    "addCarSuccess": "Araba başarıyla eklendi",
+    "addCarError": "Araba eklenemedi",
+    "updateCarSuccess": "Araba başarıyla güncellendi",
+    "updateCarError": "Araba güncellenemedi",
+    "deleteCarSuccess": "Araba başarıyla silindi",
+    "deleteCarError": "Araba silinemedi",
+    "updateAvailabilitySuccess": "Araba kullanılabilirliği güncellendi",
+    "updateAvailabilityError": "Kullanılabilirlik güncellenemedi",
+    "fetchCarsError": "Arabalar yüklenemedi",
+    "noCars": "Hiç araba yok"
+  },
+  "Common": {
+    "error": "Hata",
+    "success": "Başarı",
+    "loading": "Yükleniyor...",
+    "currency": "₺"
+  }
+  }
