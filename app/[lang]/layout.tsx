@@ -4,11 +4,12 @@ import "../globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { getDictionary } from "@/lib/dictionary";
+import ClientProvider from "@/components/ClientProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Car Rental App",
+  title: "EMKA AUTOMOTIVE",
   description: "Luxury car rentals at your fingertips",
 };
 
@@ -22,10 +23,14 @@ export default async function LangLayout({
   const dict = await getDictionary(lang);
 
   return (
-    <>
-      <Navbar dict={dict} lang={lang} />
-      <main>{children}</main>
-      <Footer dict={dict} lang={lang} />
-    </>
+    <html lang={lang}>
+      <body className={inter.className}>
+        <ClientProvider>
+          <Navbar dict={dict} lang={lang} />
+          <main>{children}</main>
+          <Footer dict={dict} lang={lang} />
+        </ClientProvider>
+      </body>
+    </html>
   );
 }
