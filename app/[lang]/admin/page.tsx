@@ -3,7 +3,7 @@
 import { getDictionary } from "@/lib/dictionary";
 import { useSession, signOut } from "next-auth/react";
 import { useRouter } from "next/navigation";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -66,28 +66,30 @@ export default function AdminDashboard({
     fetchDictionary();
   }, [lang]);
 
-  useEffect(() => {
-    if (status === "unauthenticated") {
-      router.push(`/${lang}/admin/login`);
-    } else if (status === "authenticated") {
-      fetchCars();
-    }
-  }, [status, router, lang]);
+  // Move fetchCars function above the useEffect
+const fetchCars = useCallback(async () => {
+  try {
+    const response = await fetch("/api/cars");
+    if (!response.ok) throw new Error("Failed to fetch cars");
+    const data = await response.json();
+    setCars(data);
+  } catch (error) {
+    toast({
+      title: dict?.Common?.error || "Error",
+      description: dict?.AdminDashboard?.fetchCarsError || "Failed to fetch cars",
+      variant: "destructive",
+    });
+  }
+}, [dict]);
 
-  const fetchCars = async () => {
-    try {
-      const response = await fetch("/api/cars");
-      if (!response.ok) throw new Error("Failed to fetch cars");
-      const data = await response.json();
-      setCars(data);
-    } catch (error) {
-      toast({
-        title: dict?.Common?.error || "Error",
-        description: dict?.AdminDashboard?.fetchCarsError || "Failed to fetch cars",
-        variant: "destructive",
-      });
-    }
-  };
+useEffect(() => {
+  if (status === "unauthenticated") {
+    router.push(`/${lang}/admin/login`);
+  } else if (status === "authenticated") {
+    fetchCars();
+  }
+}, [status, router, lang, fetchCars]);
+
 
   const openAddForm = () => {
     setFormCar({

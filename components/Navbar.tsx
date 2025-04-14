@@ -16,11 +16,11 @@ interface NavbarProps {
       ourTeam: string;
       contact: string;
       languageSwitch: string;
-      AdminLogin: string;
     };
   };
   lang: string;
 }
+
 
 const Navbar: React.FC<NavbarProps> = ({ dict, lang }) => {
   const [isOpen, setIsOpen] = useState(false);

@@ -60,13 +60,6 @@
     "features": "Özellikler",
     "noFeatures": "Özellik listelenmedi"
   },
-  "AdminLogin": {
-    "title": "Yönetici Girişi",
-    "email": "E-posta",
-    "password": "Şifre",
-    "signInButton": "Giriş Yap",
-    "invalidCredentials": "Geçersiz e-posta veya şifre"
-  },
   "HomePage": {
     "showcaseTitle": "Lüks Arabalarımız",
     "perDay": "günlük",
@@ -139,5 +132,15 @@
     "success": "Başarı",
     "loading": "Yükleniyor...",
     "currency": "₺"
-  }
+  },
+  "AdminLogin": {
+  "title": "Yönetici Girişi",
+  "emailLabel": "E-posta",
+  "passwordLabel": "Şifre",
+  "loginButton": "Giriş Yap",
+  "loginError": "Geçersiz e-posta veya şifre",
+  "requiredEmail": "E-posta gerekli",
+  "requiredPassword": "Şifre gerekli",
+  "logoutSuccess": "Başarıyla çıkış yapıldı"
+}
   }
