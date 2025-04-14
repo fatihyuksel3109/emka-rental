@@ -141,6 +141,6 @@
   "loginError": "Geçersiz e-posta veya şifre",
   "requiredEmail": "E-posta gerekli",
   "requiredPassword": "Şifre gerekli",
-  "logoutSuccess": "Başarıyla çıkış yapıldı",
-}
+  "logoutSuccess": "Başarıyla çıkış yapıldı"
   }
+}

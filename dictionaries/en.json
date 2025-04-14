@@ -141,7 +141,6 @@
   "loginError": "Invalid email or password",
   "requiredEmail": "Email is required",
   "requiredPassword": "Password is required",
-  "logoutSuccess": "You have been logged out",
+  "logoutSuccess": "You have been logged out"
 }
-
 }
