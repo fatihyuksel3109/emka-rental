@@ -135,13 +135,12 @@
   },
   "AdminLogin": {
   "title": "Yönetici Girişi",
-  "emailLabel": "E-posta",
-  "passwordLabel": "Şifre",
+  "email": "E-posta",
+  "password": "Şifre",
   "loginButton": "Giriş Yap",
   "loginError": "Geçersiz e-posta veya şifre",
   "requiredEmail": "E-posta gerekli",
   "requiredPassword": "Şifre gerekli",
   "logoutSuccess": "Başarıyla çıkış yapıldı",
-  "signInButton": "Giriş Yap"
 }
   }

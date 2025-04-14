@@ -24,7 +24,7 @@ export function SignInForm({ dict }: { dict: any }) {
     });
 
     if (result?.error) {
-      setError(dict.AdminLogin.invalidCredentials);
+      setError(dict.AdminLogin.loginError);
     } else {
       router.push(`/${dict.languageSwitch === "Dil" ? "tr" : "en"}/admin`);
     }
@@ -54,7 +54,7 @@ export function SignInForm({ dict }: { dict: any }) {
       </div>
       {error && <p className="text-red-500">{error}</p>}
       <Button type="submit" className="w-full">
-        {dict.AdminLogin.signInButton}
+        {dict.AdminLogin.loginButton}
       </Button>
     </form>
   );

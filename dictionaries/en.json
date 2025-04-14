@@ -135,14 +135,13 @@
   },
   "AdminLogin": {
   "title": "Admin Login",
-  "emailLabel": "Email",
-  "passwordLabel": "Password",
+  "email": "Email",
+  "password": "Password",
   "loginButton": "Login",
   "loginError": "Invalid email or password",
   "requiredEmail": "Email is required",
   "requiredPassword": "Password is required",
   "logoutSuccess": "You have been logged out",
-  "signInButton": "Log In"
 }
 
 }
